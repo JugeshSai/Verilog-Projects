@@ -26,12 +26,30 @@ A mini project implemented using Verilog that displays real-time in 24-hour form
 
 ---
 
+### 🚦 2. Traffic Light Controller using FSM with 7-Segment Countdown Display
+**Description**:  
+A state-machine-based traffic light controller that manages Red, Yellow, and Green signals with integrated countdown displayed on a 7-segment display.
+
+**Features**:
+- Implements FSM with defined timing for each light
+- Countdown timer displayed on 7-segment
+- Synchronous timing and reset logic
+- Easily scalable to support pedestrian mode or extended phases
+
+**Modules Included**:
+- FSM Controller with timing logic
+- Countdown timer using registers
+- 7-Segment Display Encoder
+- Target FPGA: **Artix-7**
+
+---
+
 ## 🚧 Upcoming Projects
 
 - 🔢 ALU Design with 8 Operations  
-- 🚦 FSM-Based Traffic Light Controller  
 - ✖️ Bit Recoded Multiplier (Booth/Radix-4 Architecture)  
 - 📺 HDMI / DVI-D Video Output on FPGA  
+
 
 ---
 
@@ -46,6 +64,4 @@ A mini project implemented using Verilog that displays real-time in 24-hour form
 ## 📜 License
 
 This repository is shared for educational and personal learning purposes only. No license has been applied.
-
-
 
