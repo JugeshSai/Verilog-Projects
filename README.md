@@ -44,12 +44,31 @@ A state-machine-based traffic light controller that manages Red, Yellow, and Gre
 
 ---
 
+### 🛣️ 3. Junction Traffic Light Controller for 4-Way Intersection
+**Description**:  
+An advanced traffic light controller that handles a full junction with four directions: **North, South, East, and West**. Each direction cycles through green, yellow, and red with fixed timing, and displays a countdown on a 2-digit 7-segment display.
+
+**Features**:
+- Finite State Machine (FSM) controlling eight traffic light states
+- Configurable green and yellow timing: 5s green, 2s yellow
+- Real-time countdown display for active signal direction
+- Supports clean transitions between directional priorities
+- Built-in 1 Hz and 500 Hz clock dividers
+- Target FPGA: **Artix-7**
+
+**Modules Included**:
+- FSM-based Junction Controller
+- 2-digit Multiplexed 7-Segment Countdown
+- Clock Divider for signal timing (50 MHz ➝ 1 Hz & 500 Hz)
+- Clean logic separation for signal direction and state encoding
+
+---
+
 ## 🚧 Upcoming Projects
 
 - 🔢 ALU Design with 8 Operations  
 - ✖️ Bit Recoded Multiplier (Booth/Radix-4 Architecture)  
 - 📺 HDMI / DVI-D Video Output on FPGA  
-
 
 ---
 
@@ -64,4 +83,3 @@ A state-machine-based traffic light controller that manages Red, Yellow, and Gre
 ## 📜 License
 
 This repository is shared for educational and personal learning purposes only. No license has been applied.
-
