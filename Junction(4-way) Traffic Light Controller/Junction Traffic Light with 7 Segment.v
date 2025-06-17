@@ -10,7 +10,7 @@ module Junction_Traffic_Light(
 
     wire clk_1hz, clk_500hz;
 
-    clk_divider clkdiv_inst (
+    clk_divider clk_inst (
         .clk1(clk1),
         .reset(reset),
         .clk_1hz(clk_1hz),
