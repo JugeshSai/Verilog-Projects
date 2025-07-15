@@ -40,7 +40,7 @@ module Simple_ALU(
         4'd2:   {carry , result} <= a_in + b_in;
         4'd3:   {carry , result} <= a_in + b_in + c_in;
         4'd4:   {carry , result} <= a_in - b_in;
-        4'd5:   {carry , result} <= a_in - b_in - c_in;//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        4'd5:   {carry , result} <= a_in - b_in - c_in;
         4'd6:   {carry , result} <= a_in + 1'b1;
         4'd7:   {carry , result} <= b_in - 1'b1;
         
