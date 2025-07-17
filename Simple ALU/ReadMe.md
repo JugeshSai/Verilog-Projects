@@ -97,7 +97,7 @@ This Verilog-based project implements a **4-bit Arithmetic Logic Unit (ALU)** on
 
 ## 🛠️ Tools Used
 
-- **Vivado 2019.2**
+- **Vivado 2023.2**
 - **Verilog HDL**
 - **Artix-7 FPGA Board**
 - **Xilinx Constraints Format (.xdc)**
