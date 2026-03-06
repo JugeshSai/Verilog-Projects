@@ -64,11 +64,73 @@ An advanced traffic light controller that handles a full junction with four dire
 
 ---
 
+### 🧮 4. 16-bit Arithmetic Logic Unit (ALU)
+**Description**:  
+A combinational **16-bit Arithmetic Logic Unit** capable of performing arithmetic, logical, shift, and rotate operations based on a 4-bit opcode control input.
+
+**Features**:
+- Supports **16 ALU operations**
+- Arithmetic operations including addition, subtraction, increment, and decrement
+- Logical operations including AND, OR, NAND, and NOR
+- Shift and rotate operations
+- Generates **Carry and Zero flags**
+- Suitable for integration in processor datapaths
+
+**Operations Implemented**:
+
+| Opcode | Operation |
+|------|------|
+|0000|PASS A|
+|0001|PASS B|
+|0010|A + B|
+|0011|A + B + Carry|
+|0100|A - B|
+|0101|A - B - Borrow|
+|0110|Increment A|
+|0111|Decrement B|
+|1000|A AND B|
+|1001|A OR B|
+|1010|NAND|
+|1011|NOR|
+|1100|Shift Right|
+|1101|Shift Left|
+|1110|Rotate Right|
+|1111|Rotate Left|
+
+---
+
+### ⚡ 5. Three-Stage Pipelined 16-bit ALU with Status Flags
+**Description**:  
+A **three-stage pipelined implementation of a 16-bit ALU** designed to improve throughput by separating input registration, execution, and result generation across multiple clock cycles.
+
+**Pipeline Stages**:
+
+**Stage 1 — Input Register Stage**
+- Captures operands and control signals
+- Registers A, B, opcode, and carry input
+
+**Stage 2 — Execution Stage**
+- Performs ALU operations based on opcode
+- Generates intermediate result and carry flag
+
+**Stage 3 — Output Stage**
+- Outputs final result
+- Generates **Zero** and **Carry** flags
+
+**Features**:
+- 16-bit datapath
+- Three-stage pipeline architecture
+- Carry and Zero flag generation
+- Supports arithmetic, logical, shift, and rotate operations
+- Improved throughput compared to a single-cycle ALU
+- Verified using a Verilog testbench
+
+---
+
 ## 🚧 Upcoming Projects
 
-- 🔢 ALU Design with 8 Operations  
-- ✖️ Bit Recoded Multiplier (Booth/Radix-4 Architecture)  
-- 📺 HDMI / DVI-D Video Output on FPGA  
+-  Bit Recoded Multiplier (Booth/Radix-4 Architecture)  
+
 
 ---
 
